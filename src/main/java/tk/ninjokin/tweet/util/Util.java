@@ -10,12 +10,8 @@ public class Util {
 	 * @return Tweet
 	 * @throws TweetNotFoundException
 	 */
-	public Tweet getTweetFromID(int ID) throws TweetNotFoundException {
-		if(twtt.getTweetFromString(twt.getString("tweets." + ID)) == null) {
-			throw new TweetNotFoundException();
-		} else {
+	public Tweet getTweetFromID(int ID) {
 			return twtt.getTweetFromString(twt.getString("tweets." + ID));
-		}
 	}
 	
 	/**
