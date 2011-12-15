@@ -7,6 +7,12 @@
   <version>1.0.0-DEV</version>
   <name>Tweet</name>
   <url>http://maven.apache.org</url>
+  <repositories>
+    <repository>
+      <id>bukkit-repo</id>
+      <url>http://repo.bukkit.org/artifactory/repo</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,5 +20,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.bukkit</groupId>
+      <artifactId>bukkit</artifactId>
+      <version>1.0.0-R1-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
+  <ciManagement>
+  	<system>Jenkins</system>
+  	<url>https://spetznazam.ci.cloudbees.com/</url>
+  </ciManagement>
 </project>
